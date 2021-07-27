@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap_5/css/bootstrap.min.css">
+    <title>Grupal 6</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-evenly">
+            <div class="card border-primary mb-3 px-0 text-center" style="max-width: 25rem;">
+                <div class="card-header text-primary fw-bold">Viñetas cuadradas</div>
+                <div class="card-body text-primary">
+                    <ul id="vinetas">
+                        <!-- Elementos li se insertan por javaScript -->
+                    </ul>
+                </div>
+            </div>
+            <div class="card border-primary mb-3 px-0 text-center" style="max-width: 25rem;">
+                <div class="card-header text-primary fw-bold">Números romanos</div>
+                <div class="card-body text-primary">
+                    <ol type="i" id="romanos">
+                        <!-- Elementos li se insertan por javaScript -->
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-8">
+            <input type="text" id="input" class="form-control text-center" placeholder="Ingresa un texto">
+        </div>
+        <h5 class="text-center mt-5">Selecciona una lista para insertar el texto</h5>
+        <div class="form-che4k d-flex justify-content-center mt-5 col-6">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="cuadrada" id="vineta-cuadrada">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Lista Viñetas
+            </label>
+        </div>
+        <div class="form-check d-flex justify-content-center mt-5 col-6">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="romanos" id="numero-romano">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Lista Números Romanos
+            </label>
+        </div>
+        <button type="button" id="boton" class="btn btn-primary col-3 mt-5">INSERTAR</button>
+    </div>
+
+
+    <script src="lib/bootstrap_5/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
